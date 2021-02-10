@@ -1,5 +1,5 @@
 {
-  "name": "indigo",
+  "name": "@alkamin/indigo",
   "description": "Create a chakra-ui based application component library with one command",
   "version": "0.0.0",
   "author": "Alex Kaminsky @alkamin",
@@ -20,6 +20,7 @@
     "@types/tmp": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
+    "conventional-changelog-conventionalcommits": "^4.5.0",
     "eslint": "^7.19.0",
     "globby": "^10.0.2",
     "prettier": "^2.2.1",
