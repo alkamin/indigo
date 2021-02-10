@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+          scope: "alkamin"
+          registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
         run: npm ci
       - name: Publish
