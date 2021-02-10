@@ -1,3 +1,13 @@
+### [1.0.2](https://github.com/alkamin/indigo/compare/1.0.1...1.0.2) (2021-02-10)
+
+
+### Bug Fixes
+
+* package scoping ([4a0f97b](https://github.com/alkamin/indigo/commit/4a0f97bfe1fadf545a7d31598b63998e46962140))
+* package scoping or something ([86caaa0](https://github.com/alkamin/indigo/commit/86caaa01f57455a71ec5526c4875f0db0b9d7c04))
+* package scoping or something ([8a49440](https://github.com/alkamin/indigo/commit/8a494403d142b1fd30db53c9246223b3ce3f5103))
+* package scoping or something ([8fe9f7f](https://github.com/alkamin/indigo/commit/8fe9f7f0ef9bb3a5b35a9883e16e1355620f2be9))
+
 ### [1.0.1](https://github.com/alkamin/indigo/compare/1.0.0...1.0.1) (2021-02-10)
 
 
