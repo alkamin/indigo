@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`indigo hello [FILE]`](#indigo-hello-file)
 * [`indigo help [COMMAND]`](#indigo-help-command)
+* [`indigo new [FILE]`](#indigo-new-file)
 
 ## `indigo hello [FILE]`
 
@@ -46,7 +47,7 @@ OPTIONS
 
 EXAMPLE
   $ indigo hello
-  hello world from ./src/hello.ts!
+  hello world from ./src/hello.tssdfsdf!
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/alkamin/indigo/blob/v0.0.0/src/commands/hello.ts)_
@@ -67,4 +68,20 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `indigo new [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ indigo new [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/new.ts](https://github.com/alkamin/indigo/blob/v0.0.0/src/commands/new.ts)_
 <!-- commandsstop -->
