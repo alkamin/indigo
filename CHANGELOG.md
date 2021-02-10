@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/alkamin/indigo/compare/1.0.0...1.0.1) (2021-02-10)
+
+
+### Bug Fixes
+
+* change helper function location ([4dd625a](https://github.com/alkamin/indigo/commit/4dd625aacf7e396668346765cf8682487ae857cf))
+
 ## 1.0.0 (2021-02-10)
 
 
