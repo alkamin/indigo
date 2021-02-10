@@ -1,7 +1,7 @@
 import { Command, flags } from "@oclif/command";
 import * as inq from "inquirer";
 import { cli } from "cli-ux";
-import generate from "./generate";
+import generate from "../../lib/generate-new";
 
 export type UserInput = {
   packageName: string;

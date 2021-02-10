@@ -5,7 +5,7 @@ import * as dot from "dot";
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from "fs";
 import { execSync } from "child_process";
 import * as mv from "mv";
-import { UserInput } from ".";
+import { UserInput } from "../commands/new";
 
 const generate = async (userInput: UserInput): Promise<void> =>
   new Promise((resolve, reject) => {
