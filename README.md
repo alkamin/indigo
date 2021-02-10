@@ -15,11 +15,11 @@ Create a chakra-ui based application component library with one command
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g indigo
+$ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-indigo/0.0.0 darwin-x64 node-v15.3.0
+@alkamin/indigo/1.0.0 linux-x64 node-v12.20.1
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
@@ -28,29 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`indigo hello [FILE]`](#indigo-hello-file)
 * [`indigo help [COMMAND]`](#indigo-help-command)
-* [`indigo new [FILE]`](#indigo-new-file)
-
-## `indigo hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ indigo hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ indigo hello
-  hello world from ./src/hello.tssdfsdf!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/alkamin/indigo/blob/v0.0.0/src/commands/hello.ts)_
+* [`indigo new`](#indigo-new)
 
 ## `indigo help [COMMAND]`
 
@@ -69,19 +48,17 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-## `indigo new [FILE]`
+## `indigo new`
 
-describe the command here
+Scaffold a new library
 
 ```
 USAGE
-  $ indigo new [FILE]
+  $ indigo new
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new.ts](https://github.com/alkamin/indigo/blob/v0.0.0/src/commands/new.ts)_
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.0.0/src/commands/new/index.ts)_
 <!-- commandsstop -->
