@@ -1,3 +1,10 @@
+### [1.1.10](https://github.com/alkamin/indigo/compare/1.1.9...1.1.10) (2021-02-11)
+
+
+### Bug Fixes
+
+* attempt to not use PAT at all ([efc46df](https://github.com/alkamin/indigo/commit/efc46df1110a67d98bf412f8219cc179330b71ab))
+
 ### [1.1.9](https://github.com/alkamin/indigo/compare/1.1.8...1.1.9) (2021-02-11)
 
 
