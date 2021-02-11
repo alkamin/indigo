@@ -1,3 +1,11 @@
+### [1.1.2](https://github.com/alkamin/indigo/compare/1.1.1...1.1.2) (2021-02-11)
+
+
+### Bug Fixes
+
+* use different checkout action ([7038197](https://github.com/alkamin/indigo/commit/703819719b29989e80c415f2c577185a8fb87b05))
+* use different checkout action ([aa54128](https://github.com/alkamin/indigo/commit/aa54128910850384d0c893728538bd9fd80fec7a))
+
 ### [1.1.1](https://github.com/alkamin/indigo/compare/1.1.0...1.1.1) (2021-02-11)
 
 
