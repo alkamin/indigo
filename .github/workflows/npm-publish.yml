@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
       - name: Setup Node.js
         uses: actions/setup-node@v1
-        with:˝
+        with:
           node-version: 12
           scope: "alkamin"
           registry-url: "https://registry.npmjs.org"
