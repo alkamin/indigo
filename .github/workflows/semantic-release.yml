@@ -12,7 +12,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          token: ${{ secrets.ALKAMIN_PAT }}
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -21,5 +20,5 @@ jobs:
         run: npm ci
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.ALKAMIN_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
         run: npx semantic-release
