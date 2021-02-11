@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/alkamin/indigo/compare/1.1.0...1.1.1) (2021-02-11)
+
+
+### Bug Fixes
+
+* npm-publish woes ([de3c5cb](https://github.com/alkamin/indigo/commit/de3c5cb654c6cb00cbaf2984b28fd14d382c796c))
+
 ## [1.1.0](https://github.com/alkamin/indigo/compare/1.0.3...1.1.0) (2021-02-11)
 
 
