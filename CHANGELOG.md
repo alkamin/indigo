@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/alkamin/indigo/compare/1.0.3...1.1.0) (2021-02-11)
+
+
+### Features
+
+* isolate semantic-release workflow ([8828235](https://github.com/alkamin/indigo/commit/88282359a050f2e2a3796c7567c97076fb9f2c99))
+
 ### [1.0.3](https://github.com/alkamin/indigo/compare/1.0.2...1.0.3) (2021-02-11)
 
 
