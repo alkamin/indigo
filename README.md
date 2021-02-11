@@ -4,9 +4,9 @@ indigo
 Create a chakra-ui based application component library with one command
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/indigo.svg)](https://www.npmjs.com/package/@alkamin/indigo)
-[![Downloads/week](https://img.shields.io/npm/dw/indigo.svg)](https://www.npmjs.com/package/@alkamin/indigo)
-[![License](https://img.shields.io/npm/l/indigo.svg)](https://github.com/alkamin/indigo/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@alkamin/indigo.svg)](https://www.npmjs.com/package/@alkamin/indigo)
+[![Downloads/week](https://img.shields.io/npm/dw/@alkamin/indigo.svg)](https://www.npmjs.com/package/@alkamin/indigo)
+[![License](https://img.shields.io/npm/l/@alkamin/indigo.svg)](https://github.com/alkamin/indigo/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
