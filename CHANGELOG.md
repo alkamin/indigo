@@ -1,3 +1,10 @@
+### [1.1.7](https://github.com/alkamin/indigo/compare/1.1.6...1.1.7) (2021-02-11)
+
+
+### Bug Fixes
+
+* try something else ([e556703](https://github.com/alkamin/indigo/commit/e556703f6f1280762d6fb0f088f4e1d01d082b3d))
+
 ### [1.1.6](https://github.com/alkamin/indigo/compare/1.1.5...1.1.6) (2021-02-11)
 
 
