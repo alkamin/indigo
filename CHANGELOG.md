@@ -1,3 +1,10 @@
+### [1.1.8](https://github.com/alkamin/indigo/compare/1.1.7...1.1.8) (2021-02-11)
+
+
+### Bug Fixes
+
+* quotes? ([4240b29](https://github.com/alkamin/indigo/commit/4240b294be14047d21f2924c0a94381879dadc44))
+
 ### [1.1.7](https://github.com/alkamin/indigo/compare/1.1.6...1.1.7) (2021-02-11)
 
 
