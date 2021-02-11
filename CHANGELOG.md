@@ -1,3 +1,10 @@
+### [1.0.3](https://github.com/alkamin/indigo/compare/1.0.2...1.0.3) (2021-02-11)
+
+
+### Bug Fixes
+
+* include 'indigo' tag in package.json ([fc7d437](https://github.com/alkamin/indigo/commit/fc7d437482f179425a29f231cc493d484b5beda2))
+
 ### [1.0.2](https://github.com/alkamin/indigo/compare/1.0.1...1.0.2) (2021-02-10)
 
 
