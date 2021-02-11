@@ -1,3 +1,10 @@
+### [1.1.5](https://github.com/alkamin/indigo/compare/1.1.4...1.1.5) (2021-02-11)
+
+
+### Bug Fixes
+
+* try release trigger ([fc39e55](https://github.com/alkamin/indigo/commit/fc39e556c117082bb8621842ccf9d29058133703))
+
 ### [1.1.4](https://github.com/alkamin/indigo/compare/1.1.3...1.1.4) (2021-02-11)
 
 
