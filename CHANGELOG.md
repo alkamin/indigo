@@ -1,3 +1,10 @@
+### [1.1.11](https://github.com/alkamin/indigo/compare/1.1.10...1.1.11) (2021-02-11)
+
+
+### Bug Fixes
+
+* nope you need a PAT ([055dc4d](https://github.com/alkamin/indigo/commit/055dc4dfc367bdaa97fcbdd0289943d983cb9f20))
+
 ### [1.1.10](https://github.com/alkamin/indigo/compare/1.1.9...1.1.10) (2021-02-11)
 
 
