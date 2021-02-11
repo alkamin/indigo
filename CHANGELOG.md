@@ -1,3 +1,10 @@
+### [1.1.4](https://github.com/alkamin/indigo/compare/1.1.3...1.1.4) (2021-02-11)
+
+
+### Bug Fixes
+
+* use PAT instead of GITHUB_TOKEN ([72b498f](https://github.com/alkamin/indigo/commit/72b498f82515ad5210c384c57f6e345361678c43))
+
 ### [1.1.3](https://github.com/alkamin/indigo/compare/1.1.2...1.1.3) (2021-02-11)
 
 
