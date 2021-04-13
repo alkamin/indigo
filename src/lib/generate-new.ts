@@ -1,55 +1,88 @@
-import copyfiles = require("copyfiles");
-import { sync as globSync } from "glob";
+import * as copyfiles from "copyfiles";
+import * as glob from "glob";
 import * as tmp from "tmp";
 import * as dot from "dot";
-import { existsSync, readFileSync, unlinkSync, writeFileSync } from "fs";
-import { execSync } from "child_process";
+import * as fs from "fs";
+import * as child_process from "child_process";
 import * as mv from "mv";
-import { UserInput } from "../commands/new";
+import * as _new from "../commands/new";
 
-const generate = async (userInput: UserInput): Promise<void> =>
+const generate = async (userInput: _new.UserInput): Promise<void> =>
   new Promise((resolve, reject) => {
-    // can't proceed if the dir exists already -- could ask to name target directory in this case
     const targetDir = `./${userInput.packageName}`;
-    if (existsSync(targetDir)) {
-      reject(`the directory '${userInput.packageName}' already exists`);
-      return;
-    }
 
-    const tmpDir = tmp.dirSync();
-    const dotConfig: Partial<dot.TemplateSettings> = {
-      argName: ["packageName", "owner", "repo"],
-      delimiters: { start: "<%", end: "%>" },
+    // All work is done in a temporary directory in case things go wrong
+    // temp directories are cleaned up by the OS
+    const tmpDir = tmp.dirSync({
+      unsafeCleanup: true,
+    });
+
+    // Excluded configs based on publishing decision
+    const publishCopyExclusions = {
+      [_new.PublishConfig.GITHUB]:
+        "./templates/library/.github/workflows/publish-npm.yml.dot",
+      [_new.PublishConfig.NPM]:
+        "./templates/library/.github/workflows/publish-gpr.yml.dot",
+      [_new.PublishConfig.NONE]:
+        "./templates/library/.github/workflows/publish*.*",
     };
-    // copy everything to a temp directory
+
+    const registryUrls = {
+      [_new.PublishConfig.GITHUB]: "https://npm.pkg.github.com",
+      [_new.PublishConfig.NPM]: "https://registry.npmjs.org",
+      [_new.PublishConfig.NONE]: "",
+    };
+
+    // change delimiters to avoid conflicts with GH action expressions
+    const dotConfig: Partial<dot.TemplateSettings> = {
+      argName: ["packageName", "owner", "repo", "registryUrl"],
+      delimiters: { start: "<%", end: "%>" },
+      strip: false,
+    };
+
+    // copy relevant files to a temp directory
     copyfiles(
       ["./templates/library/**/*", tmpDir.name],
       {
         up: 2,
         all: true,
+        exclude: publishCopyExclusions[userInput.publishConfig],
       },
       () => {
-        const templatePaths = globSync(`${tmpDir.name}/**/*.dot`, {
+        // collect and hydrate template files, removing the .dot extension
+        const templatePaths = glob.sync(`${tmpDir.name}/**/*.dot`, {
           dot: true,
         });
         templatePaths.forEach((templatePath) => {
-          const content = readFileSync(templatePath);
+          const content = fs.readFileSync(templatePath);
           const template = dot.template(content.toString(), dotConfig);
-          writeFileSync(templatePath.slice(0, -4), template(userInput));
-          unlinkSync(templatePath);
+          fs.writeFileSync(
+            templatePath.slice(0, -4),
+            template({
+              ...userInput,
+              registryUrl: registryUrls[userInput.publishConfig],
+            })
+          );
+          fs.unlinkSync(templatePath);
         });
+
         try {
-          execSync("npm install --loglevel error", {
+          child_process.execSync("npm install --loglevel error", {
             cwd: tmpDir.name,
             encoding: "utf8",
           });
         } catch (e) {
+          tmpDir.removeCallback();
           reject(
             "installation of dependencies could not be completed. Please note that indigo is not yet compatible with NPM 7"
           );
           return;
         }
+
+        // only after all operations have completed successfully do we move
+        // the result to the intended location
         mv(tmpDir.name, targetDir, (err: any) => {
+          tmpDir.removeCallback();
           if (err) {
             reject(`when attempting to copy files: ${err}`);
           } else {
