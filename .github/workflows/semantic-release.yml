@@ -20,5 +20,5 @@ jobs:
         run: npm ci
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.ALKAMIN_PAT}}
+          GITHUB_TOKEN: ${{ secrets.PAT}}
         run: npx semantic-release
