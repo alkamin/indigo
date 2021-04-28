@@ -15,6 +15,15 @@ Libaries created with Indigo are pre-configured with:
 - TypeScript
 - Storybook
 
+## Getting started
+
+```
+$ npm install -g @alkamin/indigo
+$ indigo new my-component-library
+$ cd my-component-library
+$ npm start
+```
+
 ## Publishing to NPM
 
 If you choose NPM as your publishing method, you will need to provide an NPM token to the build process:
@@ -38,16 +47,7 @@ By default, Indigo configures the build process to generate a `CHANGELOG.md` fil
 - [Commands](#commands)
 <!-- tocstop -->
 
-# Getting started
-
-```
-$ npm install -g @alkamin/indigo
-$ indigo new my-component-library
-$ cd my-component-library
-$ npm start
-```
-
-# CLI usage
+## CLI usage
 
 <!-- usage -->
 
@@ -65,7 +65,7 @@ USAGE
 
 <!-- usagestop -->
 
-# Commands
+## Commands
 
 <!-- commands -->
 
