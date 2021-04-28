@@ -17,6 +17,10 @@ Libaries created with Indigo are pre-configured with:
 
 ## Getting started
 
+Indigo works with node versions < v15. We encourage using [`nvm`](https://github.com/nvm-sh/nvm) to easily manage your node versions.
+
+If you're using `nvm` you can ensure you're on the right version with `nvm use 14`.
+
 ```
 $ npx @alkamin/indigo new my-component-library
 $ cd my-component-library
