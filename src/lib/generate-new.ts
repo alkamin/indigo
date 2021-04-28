@@ -89,6 +89,8 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
           return;
         }
 
+        fs.mkdirSync(`${tmpDir.name}/src`);
+
         // only after all operations have completed successfully do we move
         // the result to the intended location
         mv(tmpDir.name, targetDir, (err: any) => {
