@@ -1,3 +1,10 @@
+### [1.1.15](https://github.com/alkamin/indigo/compare/1.1.14...1.1.15) (2021-04-28)
+
+
+### Bug Fixes
+
+* attempt to include template file ([0353a7e](https://github.com/alkamin/indigo/commit/0353a7e35c86e07c1c105608dbab92819ae9ef90))
+
 ### [1.1.14](https://github.com/alkamin/indigo/compare/1.1.13...1.1.14) (2021-04-28)
 
 
