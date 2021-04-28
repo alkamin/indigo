@@ -1,3 +1,10 @@
+### [1.1.21](https://github.com/alkamin/indigo/compare/1.1.20...1.1.21) (2021-04-28)
+
+
+### Bug Fixes
+
+* make src directory ([df00343](https://github.com/alkamin/indigo/commit/df00343e3da2686a72916ada609a93440e98121a))
+
 ### [1.1.20](https://github.com/alkamin/indigo/compare/1.1.19...1.1.20) (2021-04-28)
 
 
