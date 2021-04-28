@@ -20,9 +20,9 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
     // Excluded configs based on publishing decision
     const publishCopyExclusions = {
       [_new.PublishConfig.GITHUB]:
-        "./templates/.github/workflows/publish-npm.yml.dot",
+        "../lib/templates/.github/workflows/publish-npm.yml.dot",
       [_new.PublishConfig.NPM]:
-        "./templates/.github/workflows/publish-gpr.yml.dot",
+        "../lib/templates/.github/workflows/publish-gpr.yml.dot",
       [_new.PublishConfig.NONE]: "./templates/.github/workflows/publish*.*",
     };
 
@@ -41,7 +41,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
 
     // copy relevant files to a temp directory
     copyfiles(
-      ["./templates/**/*", tmpDir.name],
+      ["../lib/templates/**/*", tmpDir.name],
       {
         up: 2,
         all: true,
