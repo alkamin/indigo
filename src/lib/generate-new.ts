@@ -49,7 +49,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
       },
       () => {
         // collect and hydrate template files, removing the .dot extension
-        console.log(process.env.PWD, process.cwd());
+        console.log(process.env.PWD, process.cwd(), __dirname, __filename);
         const templatePaths = glob.sync(`${tmpDir.name}/**/*.dot`, {
           dot: true,
         });
