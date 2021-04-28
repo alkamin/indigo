@@ -49,7 +49,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
       },
       () => {
         // collect and hydrate template files, removing the .dot extension
-        console.log(tmpDir.name);
+        console.log(process.env.PWD, process.cwd());
         const templatePaths = glob.sync(`${tmpDir.name}/**/*.dot`, {
           dot: true,
         });
@@ -82,7 +82,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
         // only after all operations have completed successfully do we move
         // the result to the intended location
         mv(tmpDir.name, targetDir, (err: any) => {
-          // tmpDir.removeCallback();
+          tmpDir.removeCallback();
           if (err) {
             reject(`when attempting to copy files: ${err}`);
           } else {
