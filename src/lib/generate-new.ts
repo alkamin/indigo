@@ -48,10 +48,13 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
     };
 
     // copy relevant files to a temp directory
+    const templateSrc = path.join(__dirname, "../templates");
+    const copySrc = `${templateSrc}/**/*`;
+
     copyfiles(
-      [`${path.join(__dirname, "../templates")}/**/*`, tmpDir.name],
+      [copySrc, tmpDir.name],
       {
-        up: 2,
+        up: templateSrc.split("/").length,
         all: true,
         exclude: publishCopyExclusions[userInput.publishConfig],
       },
