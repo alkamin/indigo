@@ -1,3 +1,10 @@
+### [1.1.13](https://github.com/alkamin/indigo/compare/1.1.12...1.1.13) (2021-04-28)
+
+
+### Bug Fixes
+
+* move template files ([d35395b](https://github.com/alkamin/indigo/commit/d35395bb7325f4574a40294ebba726cb147a859a))
+
 ### [1.1.12](https://github.com/alkamin/indigo/compare/1.1.11...1.1.12) (2021-04-28)
 
 
