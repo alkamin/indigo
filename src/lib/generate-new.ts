@@ -6,6 +6,7 @@ import * as fs from "fs";
 import * as child_process from "child_process";
 import * as mv from "mv";
 import * as _new from "../commands/new";
+import * as path from "path";
 
 const generate = async (userInput: _new.UserInput): Promise<void> =>
   new Promise((resolve, reject) => {
@@ -19,11 +20,18 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
 
     // Excluded configs based on publishing decision
     const publishCopyExclusions = {
-      [_new.PublishConfig.GITHUB]:
-        "lib/templates/.github/workflows/publish-npm.yml.dot",
-      [_new.PublishConfig.NPM]:
-        "lib/templates/.github/workflows/publish-gpr.yml.dot",
-      [_new.PublishConfig.NONE]: "./templates/.github/workflows/publish*.*",
+      [_new.PublishConfig.GITHUB]: path.join(
+        __dirname,
+        "../templates/.github/workflows/publish-npm.yml.dot"
+      ),
+      [_new.PublishConfig.NPM]: path.join(
+        __dirname,
+        "../templates/.github/workflows/publish-gpr.yml.dot"
+      ),
+      [_new.PublishConfig.NONE]: path.join(
+        __dirname,
+        "../templates/.github/workflows/publish*.*"
+      ),
     };
 
     const registryUrls = {
@@ -41,7 +49,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
 
     // copy relevant files to a temp directory
     copyfiles(
-      ["lib/templates/**/*", tmpDir.name],
+      [`${path.join(__dirname, "../templates")}/**/*`, tmpDir.name],
       {
         up: 2,
         all: true,
@@ -49,7 +57,6 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
       },
       () => {
         // collect and hydrate template files, removing the .dot extension
-        console.log(process.env.PWD, process.cwd(), __dirname, __filename);
         const templatePaths = glob.sync(`${tmpDir.name}/**/*.dot`, {
           dot: true,
         });
