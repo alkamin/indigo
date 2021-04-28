@@ -18,8 +18,7 @@ Libaries created with Indigo are pre-configured with:
 ## Getting started
 
 ```
-$ npm install -g @alkamin/indigo
-$ indigo new my-component-library
+$ npx @alkamin/indigo new my-component-library
 $ cd my-component-library
 $ npm start
 ```
