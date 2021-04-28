@@ -15,17 +15,9 @@ Libaries created with Indigo are pre-configured with:
 - TypeScript
 - Storybook
 
-## Publishing configuration
-
-During the scaffolding process, you will be prompted to choose a publishing configuration:
-
-- NPM
-- GPR (GitHub Package Registry)
-- None
-
 ### Publishing to NPM
 
-If you choose NPM, you will need to provide an NPM token to the build process:
+If you choose NPM as your publishing method, you will need to provide an NPM token to the build process:
 
 - generate an NPM access token -- [NPM provides helpful guidance](https://docs.npmjs.com/creating-and-viewing-access-tokens)
 - in your UI library's repository, create a secret named `NPM_TOKEN` and set the value to the token you created in the previous step -- [GitHub docs explain this process](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
