@@ -32,35 +32,32 @@ You can alter the `preset` setting of the `@semantic-release/commit-analyzer` an
 By default, Indigo configures the build process to generate a `CHANGELOG.md` file. If you'd like to use a different name for the changelog file alter the configuration of the `@semantic-release/changelog` and `@semantic-release/git` plugins in your library's `package.json` file.
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [indigo](#indigo)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-@alkamin/indigo/1.1.11 linux-x64 node-v12.20.1
+@alkamin/indigo/1.1.12 linux-x64 node-v12.22.1
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`indigo help [COMMAND]`](#indigo-help-command)
-- [`indigo new`](#indigo-new)
+* [`indigo help [COMMAND]`](#indigo-help-command)
+* [`indigo new PACKAGENAME`](#indigo-new-packagename)
 
 ## `indigo help [COMMAND]`
 
@@ -79,18 +76,20 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-## `indigo new`
+## `indigo new PACKAGENAME`
 
-Scaffold a new library
+Scaffold a new UI library
 
 ```
 USAGE
-  $ indigo new
+  $ indigo new PACKAGENAME
+
+ARGUMENTS
+  PACKAGENAME  the name of the package you want to generate
 
 OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.1.11/src/commands/new/index.ts)_
-
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.1.12/src/commands/new/index.ts)_
 <!-- commandsstop -->

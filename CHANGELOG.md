@@ -1,3 +1,10 @@
+### [1.1.12](https://github.com/alkamin/indigo/compare/1.1.11...1.1.12) (2021-04-28)
+
+
+### Bug Fixes
+
+* Separate NPM and GPR configs ([0a51a99](https://github.com/alkamin/indigo/commit/0a51a9999baec08201caa5b8bf56e0ee52160bd6))
+
 ### [1.1.11](https://github.com/alkamin/indigo/compare/1.1.10...1.1.11) (2021-02-11)
 
 
