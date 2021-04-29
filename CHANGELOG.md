@@ -1,3 +1,10 @@
+### [1.2.1](https://github.com/alkamin/indigo/compare/1.2.0...1.2.1) (2021-04-29)
+
+
+### Bug Fixes
+
+* exclude templates ([103a3d6](https://github.com/alkamin/indigo/commit/103a3d66b75ea3757c712984c9c077c44045945c))
+
 ## [1.2.0](https://github.com/alkamin/indigo/compare/1.1.21...1.2.0) (2021-04-29)
 
 
