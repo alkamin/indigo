@@ -44,36 +44,30 @@ You can alter the `preset` setting of the `@semantic-release/commit-analyzer` an
 By default, Indigo configures the build process to generate a `CHANGELOG.md` file. If you'd like to use a different name for the changelog file alter the configuration of the `@semantic-release/changelog` and `@semantic-release/git` plugins in your library's `package.json` file.
 
 <!-- toc -->
-
-- [indigo](#indigo)
-- [Usage](#usage)
-- [Commands](#commands)
+* [indigo](#indigo)
 <!-- tocstop -->
 
 ## CLI usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-@alkamin/indigo/1.1.21 linux-x64 node-v12.22.1
+@alkamin/indigo/1.2.0 linux-x64 node-v12.22.1
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 ## Commands
 
 <!-- commands -->
-
-- [`indigo help [COMMAND]`](#indigo-help-command)
-- [`indigo new PACKAGENAME`](#indigo-new-packagename)
+* [`indigo help [COMMAND]`](#indigo-help-command)
+* [`indigo new PACKAGENAME`](#indigo-new-packagename)
 
 ## `indigo help [COMMAND]`
 
@@ -107,6 +101,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.1.21/src/commands/new/index.ts)_
-
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.2.0/src/commands/new/index.ts)_
 <!-- commandsstop -->

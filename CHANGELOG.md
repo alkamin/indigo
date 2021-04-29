@@ -1,3 +1,11 @@
+## [1.2.0](https://github.com/alkamin/indigo/compare/1.1.21...1.2.0) (2021-04-29)
+
+
+### Features
+
+* override storybook emotion ([5ad9fbc](https://github.com/alkamin/indigo/commit/5ad9fbcd86c5637a4a6049a0a0829d455e905de6))
+* small theme customization example ([264786e](https://github.com/alkamin/indigo/commit/264786e6415ca0e4bf2621f601eac186f8b14b8e))
+
 ### [1.1.21](https://github.com/alkamin/indigo/compare/1.1.20...1.1.21) (2021-04-28)
 
 
