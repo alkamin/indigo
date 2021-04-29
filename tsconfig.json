@@ -9,5 +9,5 @@
     "target": "es2017"
   },
   "include": ["src/**/*"],
-  "exclude": ["templates"]
+  "exclude": ["src/templates"]
 }
