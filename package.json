@@ -1,7 +1,7 @@
 {
   "name": "@alkamin/indigo",
   "description": "Create a chakra-ui based application component library with one command",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "author": "Alex Kaminsky @alkamin",
   "bin": {
     "indigo": "bin/run"

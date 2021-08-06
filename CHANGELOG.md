@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/alkamin/indigo/compare/1.2.1...1.3.0) (2021-08-06)
+
+
+### Features
+
+* include storybook a11y plugin by default ([9dfc9b5](https://github.com/alkamin/indigo/commit/9dfc9b598ba660b7be71c8d45c6fc475adf83bf0))
+
 ### [1.2.1](https://github.com/alkamin/indigo/compare/1.2.0...1.2.1) (2021-04-29)
 
 
