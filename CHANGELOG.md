@@ -1,3 +1,10 @@
+### [1.4.1](https://github.com/alkamin/indigo/compare/1.4.0...1.4.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* extra comma ([0fdc3f3](https://github.com/alkamin/indigo/commit/0fdc3f36552b3c070751666df741b07766674fdd))
+
 ## [1.4.0](https://github.com/alkamin/indigo/compare/1.3.0...1.4.0) (2021-08-06)
 
 

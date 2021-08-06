@@ -55,7 +55,7 @@ $ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-@alkamin/indigo/1.4.0 linux-x64 node-v12.22.4
+@alkamin/indigo/1.4.1 linux-x64 node-v12.22.4
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
@@ -101,5 +101,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.4.0/src/commands/new/index.ts)_
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.4.1/src/commands/new/index.ts)_
 <!-- commandsstop -->
