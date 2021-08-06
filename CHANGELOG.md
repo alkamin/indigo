@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/alkamin/indigo/compare/1.3.0...1.4.0) (2021-08-06)
+
+
+### Features
+
+* bump package versions in output ([9e1f4b9](https://github.com/alkamin/indigo/commit/9e1f4b95b71416a3e58a6c677bdb5da113ab08fa))
+
 ## [1.3.0](https://github.com/alkamin/indigo/compare/1.2.1...1.3.0) (2021-08-06)
 
 
