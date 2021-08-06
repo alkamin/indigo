@@ -22,15 +22,15 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
     const publishCopyExclusions = {
       [_new.PublishConfig.GITHUB]: path.join(
         __dirname,
-        "../templates/.github/workflows/publish-npm.yml.dot"
+        "../templates/library/.github/workflows/publish-npm.yml.dot"
       ),
       [_new.PublishConfig.NPM]: path.join(
         __dirname,
-        "../templates/.github/workflows/publish-gpr.yml.dot"
+        "../templates/library/.github/workflows/publish-gpr.yml.dot"
       ),
       [_new.PublishConfig.NONE]: path.join(
         __dirname,
-        "../templates/.github/workflows/publish*.*"
+        "../templates/library/.github/workflows/publish*.*"
       ),
     };
 
@@ -48,7 +48,7 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
     };
 
     // copy relevant files to a temp directory
-    const templateSrc = path.join(__dirname, "../templates");
+    const templateSrc = path.join(__dirname, "../templates/library");
     const copySrc = `${templateSrc}/**/*`;
 
     copyfiles(
