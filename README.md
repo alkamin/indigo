@@ -27,12 +27,16 @@ $ cd my-component-library
 $ npm start
 ```
 
-## Publishing to NPM
+## CI/CD Configuration
 
-If you choose NPM as your publishing method, you will need to provide an NPM token to the build process:
+Defining a repository secret named `RELEASE_PAT` is required for the semantic release workflow. The user who owns the token will be listed as the creator of all releases triggered by the semantic release GitHub action.
+
+### Publishing to NPM
+
+If you choose NPM as your publishing method, you will need to provide an NPM token (`NPM_TOKEN`) to the build process:
 
 - generate an NPM access token -- [NPM provides helpful guidance](https://docs.npmjs.com/creating-and-viewing-access-tokens)
-- in your UI library's repository, create a secret named `NPM_TOKEN` and set the value to the token you created in the previous step -- [GitHub docs explain this process](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
+- in your UI library's repository, create a secret named `NPM_TOKEN` and set the value to the token you created in the previous step
 
 ## Changing the commit message format
 
