@@ -59,7 +59,7 @@ $ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-@alkamin/indigo/1.4.1 linux-x64 node-v12.22.4
+@alkamin/indigo/1.5.0 linux-x64 node-v12.22.4
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
@@ -70,8 +70,27 @@ USAGE
 ## Commands
 
 <!-- commands -->
+* [`indigo generate COMPONENTNAME`](#indigo-generate-componentname)
 * [`indigo help [COMMAND]`](#indigo-help-command)
 * [`indigo new PACKAGENAME`](#indigo-new-packagename)
+
+## `indigo generate COMPONENTNAME`
+
+Scaffold a new component
+
+```
+USAGE
+  $ indigo generate COMPONENTNAME
+
+ARGUMENTS
+  COMPONENTNAME  the name of the component you want to generate
+
+OPTIONS
+  -h, --help   show CLI help
+  --skipStory
+```
+
+_See code: [src/commands/generate/index.ts](https://github.com/alkamin/indigo/blob/v1.5.0/src/commands/generate/index.ts)_
 
 ## `indigo help [COMMAND]`
 
@@ -105,5 +124,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.4.1/src/commands/new/index.ts)_
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.5.0/src/commands/new/index.ts)_
 <!-- commandsstop -->

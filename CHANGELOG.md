@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/alkamin/indigo/compare/1.4.1...1.5.0) (2021-08-17)
+
+
+### Features
+
+* Add `generate` command to create components ([#7](https://github.com/alkamin/indigo/issues/7)) ([90a5664](https://github.com/alkamin/indigo/commit/90a566499a37daf2e36dcbe53789ed747bfc0ff2))
+
 ### [1.4.1](https://github.com/alkamin/indigo/compare/1.4.0...1.4.1) (2021-08-06)
 
 
