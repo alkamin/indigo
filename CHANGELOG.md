@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/alkamin/indigo/compare/1.5.0...1.6.0) (2021-08-17)
+
+
+### Features
+
+* Default to yarn, allow selecting NPM ([#8](https://github.com/alkamin/indigo/issues/8)) ([268c985](https://github.com/alkamin/indigo/commit/268c985ac43d5c87c4ddf3192deae49b60c3d358))
+
 ## [1.5.0](https://github.com/alkamin/indigo/compare/1.4.1...1.5.0) (2021-08-17)
 
 
