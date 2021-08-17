@@ -77,10 +77,15 @@ const generate = async (userInput: _new.UserInput): Promise<void> =>
         });
 
         try {
-          child_process.execSync("npm install --loglevel error", {
-            cwd: tmpDir.name,
-            encoding: "utf8",
-          });
+          child_process.execSync(
+            userInput.useNpm
+              ? "npm install --loglevel error"
+              : "npm_config_yes=true npx yarn@latest --silent install",
+            {
+              cwd: tmpDir.name,
+              encoding: "utf8",
+            }
+          );
         } catch (e) {
           tmpDir.removeCallback();
           reject(

@@ -9,6 +9,7 @@ export type UserInput = {
   owner: string;
   repo: string;
   publishConfig: PublishConfig;
+  useNpm: boolean;
 };
 
 export enum PublishConfig {
@@ -25,6 +26,7 @@ export default class New extends Command {
 
   static flags = {
     help: flags.help({ char: "h" }),
+    useNpm: flags.boolean({ default: false }),
   };
 
   static args = [
@@ -38,6 +40,7 @@ export default class New extends Command {
   async run() {
     const {
       args: { packageName },
+      flags: { useNpm },
     } = this.parse(New);
 
     if (!validateUrlSafeInput(packageName)) {
@@ -88,6 +91,7 @@ export default class New extends Command {
       await generate({
         ...userInput,
         packageName,
+        useNpm,
       });
     } catch (e) {
       cli.action.stop(
