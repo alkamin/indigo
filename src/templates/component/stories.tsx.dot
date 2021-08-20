@@ -1,0 +1,13 @@
+import React from "react";
+import <%=name%> from "../<%=name%>";
+
+export default {
+  title: "Components/<%=name%>",
+  component: <%=name%>,
+};
+
+// The _ argument is a workaround to allow code-previews
+// See https://github.com/storybookjs/storybook/issues/13362
+export const Default = (_: any) => (
+  <<%=name%>/>
+);

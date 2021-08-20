@@ -1,0 +1,15 @@
+import React from "react";
+
+export type <%=name%>Props = {
+  /**
+   * JSDoc comments for each prop get propogated to the props table
+   */
+};
+
+export const <%=name%> = ({ }: <%=name%>Props) => {
+  return (
+    <><%=name%></>
+  );
+};
+
+export default <%=name%>;
