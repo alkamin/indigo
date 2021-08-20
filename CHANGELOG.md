@@ -1,3 +1,10 @@
+### [1.6.2](https://github.com/alkamin/indigo/compare/1.6.1...1.6.2) (2021-08-20)
+
+
+### Bug Fixes
+
+* make component creation templates useful ([#15](https://github.com/alkamin/indigo/issues/15)) ([f2d4db7](https://github.com/alkamin/indigo/commit/f2d4db7be5219ae46faba3763f8b450a92309365))
+
 ### [1.6.1](https://github.com/alkamin/indigo/compare/1.6.0...1.6.1) (2021-08-20)
 
 

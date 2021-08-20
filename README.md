@@ -59,7 +59,7 @@ $ npm install -g @alkamin/indigo
 $ indigo COMMAND
 running command...
 $ indigo (-v|--version|version)
-@alkamin/indigo/1.6.1 linux-x64 node-v12.22.5
+@alkamin/indigo/1.6.2 linux-x64 node-v12.22.5
 $ indigo --help [COMMAND]
 USAGE
   $ indigo COMMAND
@@ -90,7 +90,7 @@ OPTIONS
   --skipStory
 ```
 
-_See code: [src/commands/generate/index.ts](https://github.com/alkamin/indigo/blob/v1.6.1/src/commands/generate/index.ts)_
+_See code: [src/commands/generate/index.ts](https://github.com/alkamin/indigo/blob/v1.6.2/src/commands/generate/index.ts)_
 
 ## `indigo help [COMMAND]`
 
@@ -125,5 +125,5 @@ OPTIONS
   --useNpm
 ```
 
-_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.6.1/src/commands/new/index.ts)_
+_See code: [src/commands/new/index.ts](https://github.com/alkamin/indigo/blob/v1.6.2/src/commands/new/index.ts)_
 <!-- commandsstop -->
