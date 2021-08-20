@@ -1,3 +1,10 @@
+### [1.6.1](https://github.com/alkamin/indigo/compare/1.6.0...1.6.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* various small fixes ([#14](https://github.com/alkamin/indigo/issues/14)) ([c321f21](https://github.com/alkamin/indigo/commit/c321f21d02da81772413254c11a595e3bfda070b))
+
 ## [1.6.0](https://github.com/alkamin/indigo/compare/1.5.0...1.6.0) (2021-08-17)
 
 
